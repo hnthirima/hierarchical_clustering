@@ -55,5 +55,6 @@ my_pallete <- colorRampPalette(c("blue", "white", "red"))(n=299)
 heatmap.2(as.matrix(mydata_matrix), dendrogram ="both",trace="none",margin=c(8,9), hclust=hclustfunc, distfun = distfunc, RowSideColors =as.character(groups), col = my_pallete, 
           key = TRUE, density.info = "none", Colv = FALSE)
 
+#Export heatmap as PDF to preserve resolution. 
 
 dev.off()
